@@ -1,2 +1,2 @@
 # Scripts_GB
-Scripts and manuals
+Scripts used to reproduce the results of our manuscript.
