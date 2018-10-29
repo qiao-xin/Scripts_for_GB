@@ -1,2 +1,2 @@
 # Scripts_GB
-Scripts and manual
+Scripts and manuals
