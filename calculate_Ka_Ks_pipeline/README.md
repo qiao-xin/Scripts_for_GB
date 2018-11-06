@@ -33,9 +33,29 @@ The aligned pairwise sequences with AXT format was used as input file for KaKs_C
 
 ### Results Files: Ath.tandem.pairs.axt.kaks
 KaKs_Calculator generates this file that contains Ka, Ks, Ka/Ks values and other informations.
+
 **Note:** KaKs_Calculator provides comprehensive information estimated from compared sequences, including numbers of synonymous and nonsynonymous sites, numbers of synonymous and nonsynonymous substitutions, GC contents, maximum-likelihood score, and AICC, in addition to synonymous and nonsynonymous substitution rates and their ratio. Meanwhile, Fisher’s exact test for small sample is applied to justify the validity of Ka and Ks calculated by these methods.
 
 ### Results Files: Ath.tandem.pairs.axt.kaks.simplified
-
+The simplified version of KaKs_Calculator
 
 ### Results Files: Ath.tandem.pairs.axt.KaKs_Calculator.log
+
+'''
+Method(s): GMYN 
+Genetic code: 1-Standard Code
+Please wait while reading sequences and calculating...
+1 AT1G01580.1-AT1G01590.1	\[OK]
+2 AT1G01660.1-AT1G01670.1	\[OK]
+3 AT1G01670.1-AT1G01680.1	[OK]
+4 AT1G02190.1-AT1G02205.3	[OK]
+5 AT1G02220.1-AT1G02230.1	[OK]
+6 AT1G02230.1-AT1G02250.1	[OK]
+7 AT1G02300.1-AT1G02305.1	[OK]
+8 AT1G02430.1-AT1G02440.1	[OK]
+9 AT1G02470.2-AT1G02475.1	[OK]
+10 AT1G02520.1-AT1G02530.1	[OK]
+Mission accomplished. (Time elapsed: 0:0)
+'''
+
+# Citation
