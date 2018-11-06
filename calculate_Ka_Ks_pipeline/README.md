@@ -37,10 +37,17 @@ KaKs_Calculator generates this file that contains Ka, Ks, Ka/Ks values and other
 **Note:** KaKs_Calculator provides comprehensive information estimated from compared sequences, including numbers of synonymous and nonsynonymous sites, numbers of synonymous and nonsynonymous substitutions, GC contents, maximum-likelihood score, and AICC, in addition to synonymous and nonsynonymous substitution rates and their ratio. Meanwhile, Fisher’s exact test for small sample is applied to justify the validity of Ka and Ks calculated by these methods.
 
 ### 3 - Ath.tandem.pairs.axt.kaks.simplified
-This is a simplified version of KaKs_Calculator output file.
+This is a simplified version of KaKs_Calculator output file, which only contains Ka, Ks, Ka/Ks and P-value.
+```
+Duplicate 1	Duplicate 2	Ka	Ks	Ka/Ks	P-Value
+AT1G01580.1	AT1G01590.1	0.230604	1.32053	0.17463	2.55813e-42
+AT1G01660.1	AT1G01670.1	0.518339	2.09868	0.246984	8.39747e-21
+AT1G01670.1	AT1G01680.1	0.365625	1.26443	0.289163	7.50956e-11
+AT1G02190.1	AT1G02205.3	0.310436	3.41288	0.0909601	1.52263e-75
+```
 
 ### 4 - Ath.tandem.pairs.axt.KaKs_Calculator.log
-KaKs_Calculator generates this file:
+KaKs_Calculator generates this log file:
 ```
 Method(s): GMYN 
 Genetic code: 1-Standard Code
