@@ -41,15 +41,12 @@ The simplified version of KaKs_Calculator
 
 ### Results Files: Ath.tandem.pairs.axt.KaKs_Calculator.log
 
-'''
+```
 Method(s): GMYN 
-
 Genetic code: 1-Standard Code
-
 Please wait while reading sequences and calculating...
-
-1 AT1G01580.1-AT1G01590.1	\[OK]
-2 AT1G01660.1-AT1G01670.1	\[OK]
+1 AT1G01580.1-AT1G01590.1	[OK]
+2 AT1G01660.1-AT1G01670.1	[OK]
 3 AT1G01670.1-AT1G01680.1	[OK]
 4 AT1G02190.1-AT1G02205.3	[OK]
 5 AT1G02220.1-AT1G02230.1	[OK]
@@ -59,6 +56,6 @@ Please wait while reading sequences and calculating...
 9 AT1G02470.2-AT1G02475.1	[OK]
 10 AT1G02520.1-AT1G02530.1	[OK]
 Mission accomplished. (Time elapsed: 0:0)
-'''
+```
 
 ## Citation
