@@ -1,6 +1,6 @@
 # A pipeline used to compute Ka and Ks.
 
-A method named gamma-MYN method (a Modified version of Yang-Nielsen method) ([γ-MYN](https://biologydirect.biomedcentral.com/articles/10.1186/1745-6150-4-20)) was used to estimate Ka and Ks values. ([MAFFT (L-INS-i)](https://mafft.cbrc.jp/alignment/software/)) was used to perform pairwise alignment of protein sequences for each duplicate gene pair.
+A method named [gamma-MYN method](https://biologydirect.biomedcentral.com/articles/10.1186/1745-6150-4-20) (a Modified version of Yang-Nielsen method) was used to estimate Ka and Ks values. [MAFFT (L-INS-i)](https://mafft.cbrc.jp/alignment/software/) was used to perform pairwise alignment of protein sequences for each duplicate gene pair.
 
 | | |
 | --- | --- |
