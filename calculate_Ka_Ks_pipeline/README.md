@@ -23,3 +23,7 @@ git clone https://github.com/qiao-xin/Scripts_for_GB.git
 
 ## Running
 
+```bash
+perl fa_get_set_genes_from_file.pl -d data/Ath.cds -g data/Ath.tandem.pairs -o Ath.tandem.pairs.axt
+```
+
