@@ -26,7 +26,7 @@ Once the required dependencies have been installed, try running this pipeline on
 ```bash
 perl fa_get_set_genes_from_file.pl -d data/Ath.cds.example -g data/Ath.tandem.pairs.example -o Ath.tandem.pairs.axt
 ```
-**Note:** The CDS sequences (FASTA format) can be downloaded from [Phytozome](https://phytozome.jgi.doe.gov/pz/portal.html). The duplicated gene pairs for different plants are available on [PlantDGD]().
+**Note:** The CDS sequences (FASTA format) can be downloaded from [Phytozome](https://phytozome.jgi.doe.gov/pz/portal.html). The different modes of duplicated gene pairs from different plants are available on [PlantDGD]().
 
 ## Results Files
 ### 1 - Ath.tandem.pairs.axt
