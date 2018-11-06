@@ -15,3 +15,9 @@ A method named [gamma-MYN method](https://biologydirect.biomedcentral.com/articl
 - [MAFFT (v7.402)](https://mafft.cbrc.jp/alignment/software/)
 - [KaKs_Calculator 2.0](https://sourceforge.net/projects/kakscalculator2/)
 
+## Installation
+
+```bash
+git clone git://github.com/tanghaibao/jcvi.git
+```
+
