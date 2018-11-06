@@ -22,7 +22,7 @@ git clone https://github.com/qiao-xin/Scripts_for_GB.git
 ```
 
 ## Running
-
+Once the required dependencies have been installed, try running on the example data:
 ```bash
 perl fa_get_set_genes_from_file.pl -d data/Ath.cds.example -g data/Ath.tandem.pairs.example -o Ath.tandem.pairs.axt
 ```
