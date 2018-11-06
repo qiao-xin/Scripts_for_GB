@@ -28,18 +28,18 @@ perl fa_get_set_genes_from_file.pl -d data/Ath.cds.example -g data/Ath.tandem.pa
 ```
 
 ## Results Files
-### Results Files: Ath.tandem.pairs.axt
+### 1. Ath.tandem.pairs.axt
 The aligned pairwise sequences with AXT format was used as input file for KaKs_Calculator.
 
-### Results Files: Ath.tandem.pairs.axt.kaks
+### 2. Ath.tandem.pairs.axt.kaks
 KaKs_Calculator generates this file that contains Ka, Ks, Ka/Ks values and other informations.
 
 **Note:** KaKs_Calculator provides comprehensive information estimated from compared sequences, including numbers of synonymous and nonsynonymous sites, numbers of synonymous and nonsynonymous substitutions, GC contents, maximum-likelihood score, and AICC, in addition to synonymous and nonsynonymous substitution rates and their ratio. Meanwhile, Fisher’s exact test for small sample is applied to justify the validity of Ka and Ks calculated by these methods.
 
-### Results Files: Ath.tandem.pairs.axt.kaks.simplified
+### 3. Ath.tandem.pairs.axt.kaks.simplified
 This is a simplified version of KaKs_Calculator output file.
 
-### Results Files: Ath.tandem.pairs.axt.KaKs_Calculator.log
+### 4. Ath.tandem.pairs.axt.KaKs_Calculator.log
 KaKs_Calculator generates this file:
 ```
 Method(s): GMYN 
