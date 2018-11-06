@@ -18,6 +18,8 @@ A method named [gamma-MYN method](https://biologydirect.biomedcentral.com/articl
 ## Installation
 
 ```bash
-git clone git://github.com/tanghaibao/jcvi.git
+git clone https://github.com/qiao-xin/Scripts_for_GB.git
 ```
+
+## Running
 
