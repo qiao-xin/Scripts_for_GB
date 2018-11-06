@@ -40,7 +40,7 @@ KaKs_Calculator generates this file that contains Ka, Ks, Ka/Ks values and other
 The simplified version of KaKs_Calculator
 
 ### Results Files: Ath.tandem.pairs.axt.KaKs_Calculator.log
-
+KaKs_Calculator generates this file
 ```
 Method(s): GMYN 
 Genetic code: 1-Standard Code
