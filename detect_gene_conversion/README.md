@@ -25,4 +25,5 @@ git clone https://github.com/qiao-xin/Scripts_for_GB.git
 ## Prepeations
 
 - Duplicate gene pairs derived from different modes of gene duplication or WGD event of different ages.
-- Whole genome CDS sequences of investigated species and outgroup species.
+- Whole-genome CDS sequences (FASTA format) of investigated species and outgroup species.
+
