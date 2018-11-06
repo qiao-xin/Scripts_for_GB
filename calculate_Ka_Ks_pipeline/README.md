@@ -1,6 +1,6 @@
 # A pipeline used to compute Ka and Ks
 
-A method named [gamma-MYN method](https://biologydirect.biomedcentral.com/articles/10.1186/1745-6150-4-20) (a Modified version of Yang-Nielsen method) is used to estimate Ka and Ks values. [MAFFT (L-INS-i)](https://mafft.cbrc.jp/alignment/software/) is used to perform pairwise alignment of protein sequences for each duplicate gene pair.
+This pipeline adopted a method named [gamma-MYN method](https://biologydirect.biomedcentral.com/articles/10.1186/1745-6150-4-20) (a Modified version of Yang-Nielsen method) to estimate Ka and Ks values. [MAFFT (L-INS-i)](https://mafft.cbrc.jp/alignment/software/) is used to perform pairwise alignment of protein sequences for each duplicate gene pair.
 
 | | |
 | --- | --- |
@@ -26,6 +26,7 @@ Once the required dependencies have been installed, try running this pipeline on
 ```bash
 perl fa_get_set_genes_from_file.pl -d data/Ath.cds.example -g data/Ath.tandem.pairs.example -o Ath.tandem.pairs.axt
 ```
+**Note:** the CDS sequences (FASTA format) can be downloaded from [Phytozome](https://phytozome.jgi.doe.gov/pz/portal.html). The duplicated gene pairs for different plants are available on [PlantDGD].
 
 ## Results Files
 ### 1 - Ath.tandem.pairs.axt
