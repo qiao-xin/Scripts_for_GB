@@ -43,8 +43,11 @@ The simplified version of KaKs_Calculator
 
 '''
 Method(s): GMYN 
+
 Genetic code: 1-Standard Code
+
 Please wait while reading sequences and calculating...
+
 1 AT1G01580.1-AT1G01590.1	\[OK]
 2 AT1G01660.1-AT1G01670.1	\[OK]
 3 AT1G01670.1-AT1G01680.1	[OK]
@@ -58,4 +61,4 @@ Please wait while reading sequences and calculating...
 Mission accomplished. (Time elapsed: 0:0)
 '''
 
-# Citation
+## Citation
