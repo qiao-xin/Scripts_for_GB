@@ -11,6 +11,7 @@ This pipeline adopted a method named [gamma-MYN method](https://biologydirect.bi
 ## Dependencies
 
 - [Perl](https://www.perl.org)
+- [BioPerl](https://bioperl.org)
 - [PAL2NAL (v14)](http://www.bork.embl.de/pal2nal/#Download)
 - [MAFFT (v7.402)](https://mafft.cbrc.jp/alignment/software/)
 - [KaKs_Calculator 2.0](https://sourceforge.net/projects/kakscalculator2/)
