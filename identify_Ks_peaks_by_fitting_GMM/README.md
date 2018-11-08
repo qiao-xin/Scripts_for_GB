@@ -1,1 +1,1 @@
-Identifying Ks peaks corresponding to WGDs or WGTs by fitting Gaussian mixture models (GMM) to Ks distribution.
+# A pipeline used to identify Ks peaks by fitting the Gaussian Mixture Model(GMM)
