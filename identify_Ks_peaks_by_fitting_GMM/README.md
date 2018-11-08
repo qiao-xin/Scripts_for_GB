@@ -5,13 +5,15 @@ This pipline aimed to calculate the Ks peaks from inter or intra-species by usin
 | --- | --- |
 | Authors | Xin Qiao ([qiaoxin](https://github.com/qiao-xin)) |
 | Email   | <qiaoxinqx2011@126.com> |
+| Authors | Qionghou Li ([Qionghou Li](https://github.com/LQHHHHH)) |
+| Email   | <liqionghou1996@gamil.com> |
 
 ## Dependencies
 
 - [Perl](https://www.perl.org)
 - [BioPerl](https://bioperl.org)
 - [Python](https://www.python.org/)
-  - [pandas](http://pandas.pydata.org/)
+  - [Pandas](http://pandas.pydata.org/)
   - [Scipy](https://www.scipy.org/)
   - [Sklearn](https://scikit-learn.org/stable/index.html)
 
