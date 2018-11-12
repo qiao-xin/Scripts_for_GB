@@ -99,4 +99,4 @@ Alignment121	Ath-Chr2&Ath-Chr4	7	1.48141166666667	4.4e-11	305.0	minus
 This file is generated in step 4. Ks peak corresponding to WGDs of different age were inferred by fitting Gaussian mixture models to Ks distribution. The Ks peak values will be outputed when running python script.
 
 ## Citation
-In preparation...
+Qiao X, Li Q, Yin H, Qi K, Li L, Wang R, Zhang S* and Paterson A*: Gene duplication and evolution in recurring polyploidization-diploidization cycles in plants. Under review.
