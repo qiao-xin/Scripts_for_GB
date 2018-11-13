@@ -4,9 +4,8 @@ This pipline aimed to calculate the Ks peaks from inter or intra-species by usin
 | | |
 | --- | --- |
 | Authors | Xin Qiao ([qiaoxin](https://github.com/qiao-xin)) |
+| | Qionghou Li ([Qionghou Li](https://github.com/LQHHHHH)) |
 | Email   | <qiaoxinqx2011@126.com> |
-| Authors | Qionghou Li ([Qionghou Li](https://github.com/LQHHHHH)) |
-| Email   | <liqionghou1996@gamil.com> |
 
 ## Dependencies
 
