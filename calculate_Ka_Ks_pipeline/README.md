@@ -68,4 +68,4 @@ Mission accomplished. (Time elapsed: 0:0)
 ```
 
 ## Citation
-In preparation...
+The manuscript is under review.
