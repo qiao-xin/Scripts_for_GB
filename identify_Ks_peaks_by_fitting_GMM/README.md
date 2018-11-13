@@ -1,5 +1,5 @@
-# A pipeline used to identify Ks peaks by fitting the Gaussian Mixture Model(GMM)
-This pipline aimed to calculate the Ks peaks from inter or intra-species by using Gaussian Mixture Model(GMM) and provide visualization for Ks peaks. It needs some output files from [MCScanX](http://chibba.pgml.uga.edu/mcscan2/) and [calculate_Ka_Ks_pipeline](https://github.com/qiao-xin/Scripts_for_GB/tree/master/calculate_Ka_Ks_pipeline).
+# A pipeline used to identify Ks peaks by fitting the Gaussian Mixture Model (GMM)
+This pipline aimed to estimate the Ks peaks corresponding to WGD events of different ages by fitting Gaussian Mixture Model (GMM) to Ks distributions of intra- or inter-species syntenic blocks. A visualization tool was incorporated in this pipeline to show the Ks distribution and the fitted curve by Gaussian Mixture Model [(GMM)]().It depends on [MCScanX](http://chibba.pgml.uga.edu/mcscan2/) and [calculate_Ka_Ks_pipeline](https://github.com/qiao-xin/Scripts_for_GB/tree/master/calculate_Ka_Ks_pipeline).
 
 | | |
 | --- | --- |
