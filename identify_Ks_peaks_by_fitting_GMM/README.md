@@ -28,7 +28,7 @@ git clone https://github.com/qiao-xin/Scripts_for_GB.git
 
 Before running this pipline, some files should be prepared:
 - ```Ath.collinearity```: an output file from running [MCScanX](http://chibba.pgml.uga.edu/mcscan2/).
-- Ath.wgd.kaks: an output file from running [calculate_Ka_Ks_pipeline](https://github.com/qiao-xin/Scripts_for_GB/tree/master/calculate_Ka_Ks_pipeline).
+- ```Ath.wgd.kaks```: an output file from running [calculate_Ka_Ks_pipeline](https://github.com/qiao-xin/Scripts_for_GB/tree/master/calculate_Ka_Ks_pipeline).
 
 ### 2. Adding Ka, Ks and Ka/Ks into collinearity file 
 
@@ -38,12 +38,12 @@ perl add_ka_ks_to_collinearity_file.pl Ath
 ~~~
 **Note:** The output file is Ath.collinearity.kaks
 
-### 3. Extracting Ks value from syntenic blocks
+### 3. Calculating average Ks value for each syntenic block
 
 ~~~bash
 perl extract_synteny_blocks_ks-v2-single.pl Ath.collinearity.kaks
 ~~~
-**Note:** The output file will be automatically named to Ath.synteny.blocks.ks.info and Ks values of syntenic blocks will be contained in it.
+**Note:** The command will generate ```Ath.synteny.blocks.ks.info```.
 
 ### 4. Calculating Ks peaks by fitting the GMM
 
