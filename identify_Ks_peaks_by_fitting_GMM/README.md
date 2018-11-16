@@ -1,5 +1,5 @@
 # A pipeline used to identify Ks peaks by fitting the Gaussian Mixture Model (GMM)
-This pipline aimed to estimate the Ks peaks corresponding to WGD events of different ages by fitting Gaussian Mixture Model (GMM) to Ks distributions of intra- or inter-species syntenic blocks. A visualization tool was incorporated in this pipeline to show the Ks distribution and the curve fitted by Gaussian Mixture Model [(GMM)](https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html#sklearn.mixture.GaussianMixture). It depends on [MCScanX](http://chibba.pgml.uga.edu/mcscan2/) and [calculate_Ka_Ks_pipeline](https://github.com/qiao-xin/Scripts_for_GB/tree/master/calculate_Ka_Ks_pipeline).
+This pipline aimed to estimate the Ks peaks corresponding to WGD events of different ages by fitting Gaussian Mixture Model (GMM) to Ks distributions of intra-species syntenic blocks. A visualization tool was incorporated in this pipeline to show the Ks distribution and the curve fitted by Gaussian Mixture Model [(GMM)](https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html#sklearn.mixture.GaussianMixture). It depends on [MCScanX](http://chibba.pgml.uga.edu/mcscan2/) and [calculate_Ka_Ks_pipeline](https://github.com/qiao-xin/Scripts_for_GB/tree/master/calculate_Ka_Ks_pipeline).
 
 | | |
 | --- | --- |
@@ -32,20 +32,21 @@ Before running this pipline, some files should be prepared:
 
 ### 2. Adding Ka, Ks and Ka/Ks into collinearity file 
 
-This command will automatically add the Ka, Ks, Ka/Ks values into Ath.collinearity by using Ath.wgd.kaks as input.
+A typical command could look like this:
 ~~~bash
 perl add_ka_ks_to_collinearity_file.pl Ath
 ~~~
-**Note:** The output file is Ath.collinearity.kaks
+This command will automatically add Ka, Ks, Ka/Ks values into Ath.collinearity by using Ath.wgd.kaks as input, and produce one output file: Ath.collinearity.kaks.
 
 ### 3. Calculating average Ks value for each syntenic block
 
+A typical command could look like this:
 ~~~bash
-perl extract_synteny_blocks_ks-v2-single.pl Ath.collinearity.kaks
+perl compute_ks_for_synteny_blocks.pl Ath.collinearity.kaks
 ~~~
-**Note:** The command will generate ```Ath.synteny.blocks.ks.info```.
+This will produce one output file: Ath.synteny.blocks.ks.info, which contains average Ks values for gene pairs contained in each syntenic block.
 
-### 4. Calculating Ks peaks by fitting the GMM
+### 4. Estimating Ks peaks from Ks distribution
 
 ~~~bash
 python plot_syntenic_blocks_ks_distri.py Ath.synteny.blocks.ks.info 2 Ath
