@@ -27,7 +27,7 @@ git clone https://github.com/qiao-xin/Scripts_for_GB.git
 ### 1. File Preparation
 
 Before running this pipline, some files should be prepared:
-- Ath.collinearity: an output file from running [MCScanX](http://chibba.pgml.uga.edu/mcscan2/).
+- ```Ath.collinearity```: an output file from running [MCScanX](http://chibba.pgml.uga.edu/mcscan2/).
 - Ath.wgd.kaks: an output file from running [calculate_Ka_Ks_pipeline](https://github.com/qiao-xin/Scripts_for_GB/tree/master/calculate_Ka_Ks_pipeline).
 
 ### 2. Adding Ka, Ks and Ka/Ks into collinearity file 
@@ -36,7 +36,7 @@ This command will automatically add the Ka, Ks, Ka/Ks values into Ath.collineari
 ~~~bash
 perl add_ka_ks_to_collinearity_file.pl Ath
 ~~~
-**Note:** The output file is Ath.collinearity.kaks.
+**Note:** The output file is Ath.collinearity.kaks
 
 ### 3. Extracting Ks value from syntenic blocks
 
