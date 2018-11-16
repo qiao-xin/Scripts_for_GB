@@ -1,5 +1,5 @@
 # A pipeline used to identify Ks peaks by fitting the Gaussian Mixture Model (GMM)
-This pipline aimed to estimate the Ks peaks corresponding to WGD events of different ages by fitting Gaussian Mixture Model (GMM) to Ks distributions of intra- or inter-species syntenic blocks. A visualization tool was incorporated in this pipeline to show the Ks distribution and the curve fitted by Gaussian Mixture Model [(GMM)](). It depends on [MCScanX](http://chibba.pgml.uga.edu/mcscan2/) and [calculate_Ka_Ks_pipeline](https://github.com/qiao-xin/Scripts_for_GB/tree/master/calculate_Ka_Ks_pipeline).
+This pipline aimed to estimate the Ks peaks corresponding to WGD events of different ages by fitting Gaussian Mixture Model (GMM) to Ks distributions of intra- or inter-species syntenic blocks. A visualization tool was incorporated in this pipeline to show the Ks distribution and the curve fitted by Gaussian Mixture Model [(GMM)](https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html#sklearn.mixture.GaussianMixture). It depends on [MCScanX](http://chibba.pgml.uga.edu/mcscan2/) and [calculate_Ka_Ks_pipeline](https://github.com/qiao-xin/Scripts_for_GB/tree/master/calculate_Ka_Ks_pipeline).
 
 | | |
 | --- | --- |
@@ -26,18 +26,17 @@ git clone https://github.com/qiao-xin/Scripts_for_GB.git
 
 ### 1. File Preparation
 
-Before using this pipline, some files should be prepared:
-- Ath.collinearity: an output file from [MCScanX](http://chibba.pgml.uga.edu/mcscan2/).
-- Ath.segmental.kaks: an output file from [calculate_Ka_Ks_pipeline](https://github.com/qiao-xin/Scripts_for_GB/tree/master/calculate_Ka_Ks_pipeline).
+Before running this pipline, some files should be prepared:
+- Ath.collinearity: an output file from running [MCScanX](http://chibba.pgml.uga.edu/mcscan2/).
+- Ath.wgd.kaks: an output file from running [calculate_Ka_Ks_pipeline](https://github.com/qiao-xin/Scripts_for_GB/tree/master/calculate_Ka_Ks_pipeline).
 
 ### 2. Adding Ka, Ks and Ka/Ks into collinearity file 
 
-This step will add the Ka, Ks from Ath.segmental.kaks to Ath.collinearity
-
+This command will automatically add the Ka, Ks, Ka/Ks values into Ath.collinearity by using Ath.wgd.kaks as input.
 ~~~bash
-perl add_ka_ks_colinearity_file-single.pl Ath.segmental.kaks Ath.collinearity
+perl add_ka_ks_to_collinearity_file.pl Ath
 ~~~
-**Note:** The output file will be automatically named to Ath.collinearity.kaks
+**Note:** The output file is Ath.collinearity.kaks.
 
 ### 3. Extracting Ks value from syntenic blocks
 
