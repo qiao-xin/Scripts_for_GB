@@ -92,8 +92,7 @@ A typical command could look like this:
 python plot_syntenic_blocks_ks_distri.py Ath.synteny.blocks.ks.info 2 Ath
 ~~~
 This command will produce:
-- Ks peaks, the Ks peak values will be printed when running this command.
-
+- Ks peak values, the related information will be printed when running this command.
 - Ath.synteny.blocks.ks.distri.pdf
 
 ![Ath.synteny.blocks.ks.distri](/identify_Ks_peaks_by_fitting_GMM/data/Ath.synteny.blocks.ks.distri.png)
