@@ -24,6 +24,8 @@ git clone https://github.com/qiao-xin/Scripts_for_GB.git
 
 ## Running
 
+Here, we used this pipeline to infer the Ks peaks corresponding to WGD events of different ages in *Arabidopsis thaliana* genome.
+
 ### 1. File Preparation
 
 Before running this pipline, some files should be prepared:
@@ -98,7 +100,7 @@ This command will produce:
 ![Ath.synteny.blocks.ks.distri](/identify_Ks_peaks_by_fitting_GMM/data/Ath.synteny.blocks.ks.distri.png)
 *Figure 1: The distribution of Ks values of syntenic blocks within Arabidopsis genome.*
 
-Ks peaks corresponding to WGD events of different age were inferred by fitting Gaussian mixture models to Ks distribution. 
+Ks peaks corresponding to WGD events of different ages were inferred by fitting Gaussian mixture models to Ks distribution. 
 
 ## Citation
 The manuscript is under review.
