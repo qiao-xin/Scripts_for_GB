@@ -81,7 +81,7 @@ Alignment121	Ath-Chr2&Ath-Chr4	7	1.48141166666667	4.4e-11	305.0	minus
 
 ### 4. Estimating Ks peaks from Ks distribution
 
-USAGE:
+**USAGE:**
 ~~~bash
 python plot_syntenic_blocks_ks_distri.py Species_Abbr.synteny.blocks.ks.info Components Species_Abbr
 ~~~
