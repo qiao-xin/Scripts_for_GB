@@ -27,3 +27,5 @@ git clone https://github.com/qiao-xin/Scripts_for_GB.git
 - Duplicate gene pairs derived from different modes of gene duplication or WGD event of different ages.
 - Whole-genome CDS sequences (FASTA format) of investigated species and outgroup species.
 
+## Running
+
