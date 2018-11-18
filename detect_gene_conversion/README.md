@@ -52,7 +52,7 @@ A typical command could look like this:
 perl GeConScan.pl Ath Aly r Ath.wgd.pairs.example
 ```
 This command will produce:
-- Ath_Aly.homologous.quartets
+1. Ath_Aly.homologous.quartets
 ```
 Duplicate 1	Homolog 1	Duplicate 2	Homolog 2
 Ath.AT1G17380.1	Aly.Aly312706	Ath.AT1G72450.1	Aly.Aly476379
@@ -63,10 +63,10 @@ Ath.AT1G17530.1	Aly.Aly471960	Ath.AT1G72750.1	Aly.Aly476412
 Ath.AT1G17590.1	Aly.Aly471968	Ath.AT1G72830.2	Aly.Aly339498
 ```
 
-- Ath_Aly.quartets.K.CV.BP.txt
+2. Ath_Aly.quartets.K.CV.BP.txt
 ```
 Note:	Ath-1 and Ath-2 show two Ath paralogous genes, Aly-1 and Aly-2 show two Aly paralogous genes
-	    Pa() shows nonsynonymous nucleotide substitution difference, Ps() shows synonymous nucleotide substitution difference
+	Pa() shows nonsynonymous nucleotide substitution difference, Ps() shows synonymous nucleotide substitution difference
 Homologous_quartets	Pa(Ath-1, Ath-2)	Ps(Ath-1, Ath-2)	Pa(Aly-1, Aly-2)	Ps(Aly-1, Aly-2)	Pa(Ath-1, Aly-1)	Ps(Ath-1, Aly-1)	Pa(Ath-2, Aly-2)	Ps(Ath-2, Aly-2)	Is_conversion_between_Ath-1_and_Ath-2	Is_conversion_between_Aly-1_and_Aly-2	Bootstrap_percentage_Ath-1_Ath-2	Bootstrap_percentage_Aly-1_Aly-2
 Ath.AT1G17380.1_Ath.AT1G72450.1_Aly.Aly312706_Aly.Aly476379	0.2493	1.0510	0.2763	0.9870	0.0493	0.1356	0.0394	0.1723	N	N	
 Ath.AT1G17400.1_Ath.AT1G72490.1_Aly.Aly471945_Aly.Aly476382	0.2136	1.0556	0.2100	1.1067	0.0122	0.1398	0.0327	0.2425	N	N	
