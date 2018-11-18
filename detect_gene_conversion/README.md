@@ -43,7 +43,7 @@ Before running this pipline, some data files should be prepared:
 
 **USAGE:**
 ```bash
-perl GeConScan.pl Species_A Species_B Order(f or r) paralog_pairs_in_A
+perl GeConScan.pl species_A species_B gene_order_in_collinearity paralog_pairs_in_A
 ```
 
 
