@@ -53,5 +53,25 @@ perl GeConScan.pl Ath Aly r Ath.wgd.pairs.example
 ```
 This command will produce:
 - Ath_Aly.homologous.quartets
-- Ath_Aly.quartets.K.CV.BP.txt
+```
+Duplicate 1	Homolog 1	Duplicate 2	Homolog 2
+Ath.AT1G17380.1	Aly.Aly312706	Ath.AT1G72450.1	Aly.Aly476379
+Ath.AT1G17400.1	Aly.Aly471945	Ath.AT1G72490.1	Aly.Aly476382
+Ath.AT1G17455.1	Aly.Aly471952	Ath.AT1G72630.1	Aly.Aly339481
+Ath.AT1G17480.1	Aly.Aly471956	Ath.AT1G72670.1	Aly.Aly476404
+Ath.AT1G17530.1	Aly.Aly471960	Ath.AT1G72750.1	Aly.Aly476412
+Ath.AT1G17590.1	Aly.Aly471968	Ath.AT1G72830.2	Aly.Aly339498
+```
 
+- Ath_Aly.quartets.K.CV.BP.txt
+```
+Note:	Ath-1 and Ath-2 show two Ath paralogous genes, Aly-1 and Aly-2 show two Aly paralogous genes
+	    Pa() shows nonsynonymous nucleotide substitution difference, Ps() shows synonymous nucleotide substitution difference
+Homologous_quartets	Pa(Ath-1, Ath-2)	Ps(Ath-1, Ath-2)	Pa(Aly-1, Aly-2)	Ps(Aly-1, Aly-2)	Pa(Ath-1, Aly-1)	Ps(Ath-1, Aly-1)	Pa(Ath-2, Aly-2)	Ps(Ath-2, Aly-2)	Is_conversion_between_Ath-1_and_Ath-2	Is_conversion_between_Aly-1_and_Aly-2	Bootstrap_percentage_Ath-1_Ath-2	Bootstrap_percentage_Aly-1_Aly-2
+Ath.AT1G17380.1_Ath.AT1G72450.1_Aly.Aly312706_Aly.Aly476379	0.2493	1.0510	0.2763	0.9870	0.0493	0.1356	0.0394	0.1723	N	N	
+Ath.AT1G17400.1_Ath.AT1G72490.1_Aly.Aly471945_Aly.Aly476382	0.2136	1.0556	0.2100	1.1067	0.0122	0.1398	0.0327	0.2425	N	N	
+Ath.AT1G17455.1_Ath.AT1G72630.1_Aly.Aly471952_Aly.Aly339481	0.0695	0.8170	0.0738	0.7803	0.0000	0.0449	0.0040	0.2151	N	N	
+Ath.AT1G17480.1_Ath.AT1G72670.1_Aly.Aly471956_Aly.Aly476404	0.1680	1.0117	0.1634	0.9545	0.0200	0.1268	0.0112	0.1642	N	N	
+Ath.AT1G17530.1_Ath.AT1G72750.1_Aly.Aly471960_Aly.Aly476412	0.0888	0.9736	0.0900	0.9477	0.0224	0.1566	0.0074	0.1205	N	N	
+Ath.AT1G17590.1_Ath.AT1G72830.2_Aly.Aly471968_Aly.Aly339498	0.2331	0.5479	0.1989	0.5094	0.0859	0.1327	0.0455	0.1487	N	N
+```
