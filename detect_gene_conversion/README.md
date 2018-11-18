@@ -22,10 +22,33 @@ This pipeline incorporated a sophisticated method that was firstly reported in a
 git clone https://github.com/qiao-xin/Scripts_for_GB.git
 ```
 
-## Prepeations
+## Preparing Data files
+Here, we used this pipeline to detect gene conversion events in WGD-derived gene pairs for *Arabidopsis thaliana* (Ath) using *Arabidopsis lyrata* (Aly) as outgroup.
 
-- Duplicate gene pairs derived from different modes of gene duplication or WGD event of different ages.
-- Whole-genome CDS sequences (FASTA format) of investigated species and outgroup species.
+Before running this pipline, some data files should be prepared:
+- ```Ath.wgd.pairs```: duplicate gene pairs derived from different modes of gene duplication or WGD events of different ages.
+- ```Ath.cds``` and ```Aly.cds```: whole-genome CDS sequences (FASTA format) of investigated species (Ath) and outgroup species (Aly).
+- ```Ath_Aly.collinearity```: the execution of [MCScanX](http://chibba.pgml.uga.edu/mcscan2/) will output this file, containing pairwise collinear blocks as follows:
+```
+## Alignment 0: score=64951.0 e_value=0 N=1326 Aly-scaffold_1&Ath-Chr1 plus
+  0-  0:	Aly333558	AT1G02210.1	  3e-11
+  0-  1:	Aly470187	AT1G02260.1	      0
+  0-  2:	Aly470188	AT1G02270.1	      0
+  0-  3:	Aly311338	AT1G02280.1	      0
+  0-  4:	Aly470192	AT1G02310.1	      0
+  0-  5:	Aly470194	AT1G02335.1	 4e-152
+```
 
 ## Running
+
+**USAGE:**
+```bash
+perl GeConScan.pl Species_A Species_B Order(f or r) paralog_pairs_in_A
+```
+
+
+```bash
+perl GeConScan.pl Ath Aly r Ath.proximal.pairs-example
+```
+
 
