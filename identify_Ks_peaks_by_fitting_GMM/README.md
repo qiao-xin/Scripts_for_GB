@@ -26,7 +26,7 @@ git clone https://github.com/qiao-xin/Scripts_for_GB.git
 
 Here, we used this pipeline to infer the Ks peaks corresponding to WGD events of different ages in *Arabidopsis thaliana* genome.
 
-### 1. File Preparation
+### 1. Input Files Preparation
 
 Before running this pipline, some files should be prepared:
 - ```Ath.collinearity```: an output file from running [MCScanX](http://chibba.pgml.uga.edu/mcscan2/).
