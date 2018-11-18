@@ -43,12 +43,15 @@ Before running this pipline, some data files should be prepared:
 
 **USAGE:**
 ```bash
-perl GeConScan.pl species_A species_B gene_order_in_collinearity paralog_pairs_in_A
+perl GeConScan.pl species_A_abbr species_B_abbr gene_order_in_collinearity paralog_pairs_in_A
 ```
+The parameter ```species_A_abbr``` and ```species_B_abbr``` indicates scientific name abbreviation you defined for the investigated species and outgroup species respectively, for example, "Ath" and "Aly". You can set the option ```gene_order_in_collinearity``` by 'f' or 'r'. If the target genome gene_id located before the outgroup genome gene_id in file "xyz.collinearity", please use 'f'. ```paralog_pairs_in_A``` indicates the input file containing paralogous gene pairs from target species.
 
-
+A typical command could look like this:
 ```bash
-perl GeConScan.pl Ath Aly r Ath.proximal.pairs-example
+perl GeConScan.pl Ath Aly r Ath.wgd.pairs.example
 ```
-
+This command will produce:
+- Ath_Aly.homologous.quartets
+- Ath_Aly.quartets.K.CV.BP.txt
 
