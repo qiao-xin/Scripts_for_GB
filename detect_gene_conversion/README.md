@@ -73,3 +73,12 @@ Ath.AT1G17480.1_Ath.AT1G72670.1_Aly.Aly471956_Aly.Aly476404	0.1680	1.0117	0.1634
 Ath.AT1G17530.1_Ath.AT1G72750.1_Aly.Aly471960_Aly.Aly476412	0.0888	0.9736	0.0900	0.9477	0.0224	0.1566	0.0074	0.1205	N	N	
 Ath.AT1G17590.1_Ath.AT1G72830.2_Aly.Aly471968_Aly.Aly339498	0.2331	0.5479	0.1989	0.5094	0.0859	0.1327	0.0455	0.1487	N	N
 ```
+**Note:**
+- Ath-1 and Ath-2 show two Ath paralogous genes, Aly-1 and Aly-2 show two Aly paralogous genes.
+- Pa() shows nonsynonymous nucleotide substitution difference, Ps() shows synonymous nucleotide substitution difference.
+- 'N'shows no gene converison found between the Ath or Aly paralogs.
+- 'R' shows that the two Ath paralogs have been affected by gene covnersion.
+- 'S' shows that the two Aly paralogs have been affected by gene covnersion.
+
+## Citation
+The manuscript is under review.
