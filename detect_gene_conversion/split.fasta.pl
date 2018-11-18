@@ -1,7 +1,7 @@
 use strict;
 use Bio::SeqIO;
 
-print " ========= Usage ======= \nperl split.fasta.pl inputfile outputdir\n=========================\n";
+#print " ========= Usage ======= \nperl split.fasta.pl inputfile outputdir\n=========================\n";
 
 my $fastafile = $ARGV[0];
 my $is = Bio::SeqIO -> new(-format=>'fasta', -file => $fastafile);
