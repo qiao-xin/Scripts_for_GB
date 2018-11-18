@@ -22,7 +22,7 @@ This pipeline incorporated a sophisticated method that was firstly reported in a
 git clone https://github.com/qiao-xin/Scripts_for_GB.git
 ```
 
-## Preparing Data files
+## Preparing input files
 Here, we used this pipeline to detect gene conversion events in WGD-derived gene pairs for *Arabidopsis thaliana* (Ath) using *Arabidopsis lyrata* (Aly) as outgroup.
 
 Before running this pipline, some data files should be prepared:
