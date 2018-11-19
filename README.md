@@ -1,7 +1,5 @@
 # Scripts_for_GB
 
-The code used in the manuscript titled "Gene duplication and evolution in recurring polyploidization-diploidization cycles in plants". 
-
 Here is summary of what these directories contain:
 - ```calculate_Ka_Ks_pipeline/```: The pipeline used to compute Ka, Ks, and Ka/Ks for duplicated gene pairs.
 - ```detect_gene_conversion/```: The pipeline used to detect gene conversion events.
