@@ -6,3 +6,4 @@ Here is summary of what these directories contain:
 - ```identify_Ks_peaks_by_fitting_GMM/```: The pipline used to infer the Ks peaks corresponding to WGD events of different ages by fitting Gaussian Mixture Model (GMM) to Ks distributions.
 
 ## Citation
+*Qiao X, Li Q, Yin H, Qi K, Li L, Wang R, Zhang S\* and Paterson A\*: Gene duplication and evolution in recurring polyploidization-diploidization cycles in plants. Under Review.*
