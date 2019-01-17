@@ -68,5 +68,4 @@ Mission accomplished. (Time elapsed: 0:0)
 ```
 
 ## Citation
-## Citation
 *Qiao X, Li Q, Yin H, Qi K, Li L, Wang R, Zhang S\* and Paterson A\*: Gene duplication and evolution in recurring polyploidization-diploidization cycles in plants. Under Review.*
