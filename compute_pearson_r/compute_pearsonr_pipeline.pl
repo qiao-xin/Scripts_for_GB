@@ -172,7 +172,7 @@ foreach my $pairs (@files)
 		{
 			chomp;
 			my @a=split /\t/, $_;
-			if($expr{$a[0]} >= $cutoff{$sp} && $expr{$a[1]} >= $cutoff{$sp})
+			if($expr{$a[0]} >= 0.01 && $expr{$a[1]} >= 0.01)
 			{
 				print OUT "$_\n";
 			}
@@ -183,7 +183,7 @@ foreach my $pairs (@files)
 		}
 		close OUT;
 		close IN;
-		system "rm -f random.pairs";
+		#system "rm -f random.pairs";
 		print "   Estimating the pearson r...\n";
 		print "   -----------------------------------------\n\n";
 		system "python pearsonr.py alltpm.log10 random.pairs.filtered $pairs.pr";
