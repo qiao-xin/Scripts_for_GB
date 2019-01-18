@@ -1,4 +1,4 @@
-# A pipeline used to calculate Pearson correlation coefficient between expression of gene pairs 
+# A pipeline used to compute Pearson correlation coefficient between expression profiles of duplicate gene pairs 
 This pipeline can calculate PCC(Pearson coorelation coefficient) between a given gene pairs and 1000 randomly generate gene pairs using [Kallisto](http://pachterlab.github.io/kallisto/about.html) outputs. 
 
 | | |
