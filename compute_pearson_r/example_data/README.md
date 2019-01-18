@@ -6,7 +6,7 @@ The transcriptome data used here was generated in a previous study entitled "Wan
 | | |
 | --- | --- |
 | output1 | Leaf |
-| output2 | flower |
-| output3 | stem |
-| output4 | root |
-| output5 | silique |
+| output2 | Flower |
+| output3 | Stem |
+| output4 | Root |
+| output5 | Silique |
