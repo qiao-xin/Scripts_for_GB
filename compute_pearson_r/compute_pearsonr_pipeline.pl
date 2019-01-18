@@ -18,7 +18,7 @@ sub log10;
 my %cutoff;
 $cutoff{"Ath"}=0.02;#just for example
 
-my %dirn;
+#my %dirn;
 my %expr;
 print "Loading TPM values from Kallisto results...\n";
 print "================================================\n\n";
@@ -31,7 +31,7 @@ open IN, "dir.num";
 while(<IN>)
 {
 	chomp;
-	$dirn{$key}=$_;
+	#$dirn{$key}=$_;
 	$dirn=$_;
 }
 close IN;
