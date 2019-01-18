@@ -1,0 +1,9 @@
+{
+	"n_targets": 27416,
+	"n_bootstraps": 0,
+	"n_processed": 4014673,
+	"kallisto_version": "0.43.0",
+	"index_version": 10,
+	"start_time": "Tue Dec 20 10:41:51 2016",
+	"call": "kallisto quant -i transcriptsg.idx -o output102 -t 8 SRR3993755_1.fastq SRR3993755_2.fastq"
+}
