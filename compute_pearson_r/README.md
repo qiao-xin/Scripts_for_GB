@@ -4,8 +4,8 @@ This pipeline can be used to compute Pearson's coorelation coefficient (*r*) bet
 
 | | |
 | --- | --- |
-| Authors | Xin Qiao ([qiaoxin](https://github.com/qiao-xin)) |
-| | Qionghou Li ([Qionghou Li](https://github.com/LQHHHHH)) |
+| Authors | [Xin Qiao](https://github.com/qiao-xin)) |
+| | [Qionghou Li](https://github.com/LQHHHHH)) |
 | Email   | <qiaoxinqx2011@126.com> |
 
 ## Dependencies
