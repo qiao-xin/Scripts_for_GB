@@ -68,7 +68,12 @@ perl compute_pearsonr_pipeline.pl
 The integrated spatial expression for each gene in different tissues. The data in ```alltpm``` looks like this (tab separated):
 
 ```
-
+GeneID	1	2	3	4	5
+AT1G09645.1	89.2424	58.1628	73.8257	79.6055	5.44928
+AT5G02280.1	18.9473	24.7855	28.309	33.0487	0.923299
+AT1G70700.1	477.756	183.034	181.575	20.1834	7.17899
+AT1G25097.1	0.694941	0	0	0	0
+AT2G30410.1	77.7176	95.5345	127.086	87.8365	4.49006
 ```
 This pipeline can extract expression values (measured as TPM) from different tissues ([Kallisto outputs](https://github.com/qiao-xin/Scripts_for_GB/tree/master/compute_pearson_r/example_data)) for each gene, and then merge into one file.
 
