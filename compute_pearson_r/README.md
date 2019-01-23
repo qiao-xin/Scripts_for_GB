@@ -76,13 +76,13 @@ This pipeline can extract expression values (measured as TPM) from different tis
 Log10-transformed TPM values for each gene.
 
 ### 3 - Ath.tandem.pairs.pr
-Pearson's ***r*** values for tandem gene pairs.
+Pearson's *r* values for tandem gene pairs.
 
 ### 4 - random.pairs
 10,000 random gene pairs were generated for *A.thaliana* when running this pipeline.
 
 ### 5 - random.pairs.pr
-Pearson's ***r*** values for 10,000 random gene pairs.
+Pearson's *r* values for 10,000 random gene pairs.
 
 ## Citation
 *Qiao X, Li Q, Yin H, Qi K, Li L, Wang R, Zhang S\* and Paterson AH\*: Gene duplication and evolution in recurring polyploidization-diploidization cycles in plants. Under Review.*
