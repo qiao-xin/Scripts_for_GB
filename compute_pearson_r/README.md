@@ -32,6 +32,10 @@ The result files were provided in ```example_data```:
 
 - example_data
   - output1
+  - output2
+  - output3
+  - output4
+  - output5
 
 |||
 | --- | --- |
@@ -45,7 +49,7 @@ The result files were provided in ```example_data```:
 
 The duplicate gene pairs identified from different plants are available on [PlantDGD]().
 
-- [Ath.tandem.pairs](https://github.com/qiao-xin/Scripts_for_GB/blob/master/compute_pearson_r/Ath.tandem.pairs): Duplicate gene pairs in *Arabidopsis thaliana* 
+Here, we only estimated ***r*** values between expression profiles of tandem gene pairs in *A. thaliana*. Also, you can include other types of duplicate gene pairs (e.g. WGD, PD, TRD) in the current directory.
 
 
 ## Running
@@ -56,7 +60,6 @@ USAGE:
 ```coding
 perl compute_pearsonr_pipeline.pl
 ```
-This command will produce:
 
 ## Results Files
 
