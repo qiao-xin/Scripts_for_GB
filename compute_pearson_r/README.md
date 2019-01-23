@@ -24,7 +24,7 @@ git clone https://github.com/qiao-xin/Scripts_for_GB.git
 
 Before running this pipline, some data files should be prepared:
 
-### 1. 
+### 1. gene expression profiles
 
 - [Kallisto results](https://github.com/qiao-xin/Scripts_for_GB/tree/master/compute_pearson_r/example_data): [Kallisto](http://pachterlab.github.io/kallisto/about.html) output files(see [example Data](https://github.com/qiao-xin/Scripts_for_GB/tree/master/compute_pearson_r/example_data))
 
@@ -38,7 +38,9 @@ The example transcriptome data (```example_data```) from different tissues of  *
 | output4 | Root |
 | output5 | Silique |
 
-### 2. Duplicate gene pairs
+### 2. duplicate gene pairs
+
+The duplicate gene pairs identified from different plants are available on [PlantDGD]().
 
 - [Ath.tandem.pairs](https://github.com/qiao-xin/Scripts_for_GB/blob/master/compute_pearson_r/Ath.tandem.pairs): Duplicate gene pairs in *Arabidopsis thaliana* 
 
@@ -47,13 +49,13 @@ The example transcriptome data (```example_data```) from different tissues of  *
 
 USAGE:
 Once the required files have been prepared, try running this pipeline on the example data:
-
 ```coding
 perl compute_pearsonr_pipeline.pl
 ```
+This command will produce:
 
 ## Results Files
-This command will produce:
+
 
 ### 1 - Alltpm
 our pipeline can merge multiple expression data sets from Kallisto into one file
