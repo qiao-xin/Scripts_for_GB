@@ -64,7 +64,7 @@ perl compute_pearsonr_pipeline.pl
 ## Results Files
 
 
-#### 1 - alltpm
+### 1 - alltpm
 The integrated spatial expression for each gene in different tissues. The data in ```alltpm``` looks like this (tab separated):
 
 ```
