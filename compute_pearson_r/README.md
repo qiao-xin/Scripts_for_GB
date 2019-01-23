@@ -66,7 +66,6 @@ perl compute_pearsonr_pipeline.pl
 
 ### 1 - alltpm
 The integrated spatial expression for each gene in different tissues. The data in ```alltpm``` looks like this (tab separated):
-
 ```
 GeneID	1	2	3	4	5
 AT1G09645.1	89.2424	58.1628	73.8257	79.6055	5.44928
@@ -79,6 +78,14 @@ This pipeline can extract expression values (measured as TPM) from different tis
 
 ### 2 - alltpm.log10
 Log10-transformed TPM values for each gene.
+```
+GeneID	1	2	3	4	5
+AT1G09645.1	1.95057124127048	1.76464530561024	1.86820757354698	1.90094307448557	0.736339123802573
+AT5G02280.1	1.277547331526	1.39419768438907	1.45192452842012	1.51915438079804	-0.0346576348116481
+AT1G70700.1	2.67920614994061	2.26253177082796	2.25905605283343	1.30499432725574	0.856063348381457
+AT1G25097.1	-0.158052065139533	-4	-4	-4	-4
+AT2G30410.1	1.89051938067131	1.98016023497532	2.10409771060411	1.94367502222247	0.652252144454283
+```
 
 ### 3 - Ath.tandem.pairs.pr
 Pearson's *r* values for tandem gene pairs.
