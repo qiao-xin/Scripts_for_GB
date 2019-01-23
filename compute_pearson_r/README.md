@@ -4,7 +4,7 @@ This pipeline can be used to compute Pearson's coorelation coefficient (*r*) bet
 
 | | |
 | --- | --- |
-| Authors | Xin Qiao ([Xin Qiao](https://github.com/qiao-xin)) |
+| Authors | Xin Qiao ([qiaoxin](https://github.com/qiao-xin)) |
 | | Qionghou Li ([Qionghou Li](https://github.com/LQHHHHH)) |
 | Email   | <qiaoxinqx2011@126.com> |
 
@@ -20,8 +20,15 @@ This pipeline can be used to compute Pearson's coorelation coefficient (*r*) bet
 git clone https://github.com/qiao-xin/Scripts_for_GB.git
 ```
 
-## Running
-The example transcriptome data (```example_data```) from different tissues of  *Arabidopsis thaliana*  was reported in a previous study [Evolutionary Fates and Dynamic Functionalization of Young Duplicate Genes in Arabidopsis Genomes](http://www.plantphysiol.org/content/172/1/427.abstract). 
+## Preparing input files
+
+Before running this pipline, some data files should be prepared:
+
+### 1. 
+
+- [Kallisto results](https://github.com/qiao-xin/Scripts_for_GB/tree/master/compute_pearson_r/example_data): [Kallisto](http://pachterlab.github.io/kallisto/about.html) output files(see [example Data](https://github.com/qiao-xin/Scripts_for_GB/tree/master/compute_pearson_r/example_data))
+
+The example transcriptome data (```example_data```) from different tissues of  *Arabidopsis thaliana*  was reported in a previous study [(Wang et al. 2016)](http://www.plantphysiol.org/content/172/1/427.abstract). 
 
 |||
 | --- | --- |
@@ -31,23 +38,25 @@ The example transcriptome data (```example_data```) from different tissues of  *
 | output4 | Root |
 | output5 | Silique |
 
-### 1. Input Files Preparation
-Before running this pipline, some files should be prepared:
+### 2. Duplicate gene pairs
 
 - [Ath.tandem.pairs](https://github.com/qiao-xin/Scripts_for_GB/blob/master/compute_pearson_r/Ath.tandem.pairs): Duplicate gene pairs in *Arabidopsis thaliana* 
-- [Kallisto results](https://github.com/qiao-xin/Scripts_for_GB/tree/master/compute_pearson_r/example_data): [Kallisto](http://pachterlab.github.io/kallisto/about.html) output files(see [Example Data](https://github.com/qiao-xin/Scripts_for_GB/tree/master/compute_pearson_r/example_data))
 
 
-### 2.Running
-When you prepared Input files, this pipeline can provide a easy way to calculate PCC of gene pairs.
+## Running
 
-A typical command could look like this:
+USAGE:
+Once the required files have been prepared, try running this pipeline on the example data:
+
 ```coding
 perl compute_pearsonr_pipeline.pl
 ```
+
+## Results Files
 This command will produce:
 
-1.Alltpm: our pipeline can merge multiple expression data sets from Kallisto into one file
+### 1 - Alltpm
+our pipeline can merge multiple expression data sets from Kallisto into one file
 
 2.alltpm.log10: Log10 transformation for Alltpm values
 
@@ -56,3 +65,6 @@ This command will produce:
 4.random.pairs:1000 gene pairs randomly generated from *A.thaliana* genome
 
 5.random.pairs.pr: PCC values of 1000 randomly generate gene pairs
+
+## Citation
+*Qiao X, Li Q, Yin H, Qi K, Li L, Wang R, Zhang S\* and Paterson AH\*: Gene duplication and evolution in recurring polyploidization-diploidization cycles in plants. Under Review.*
