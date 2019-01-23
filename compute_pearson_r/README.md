@@ -1,5 +1,6 @@
-# A pipeline used to compute Pearson correlation coefficient between expression profiles of duplicate gene pairs 
-This pipeline can calculate PCC(Pearson coorelation coefficient) between a given gene pairs and 1000 randomly generate gene pairs using [Kallisto](http://pachterlab.github.io/kallisto/about.html) outputs. 
+# A pipeline used to compute Pearson's correlation coefficient between expression profiles of duplicate gene pairs  
+
+This pipeline can be used to compute Pearson's coorelation coefficient (r) between expression profiles of gene pairs derived from different modes of gene duplication. Meanwhile, this pipeline can automatically generate 10,000 random gene pairs and compute r values for them.
 
 | | |
 | --- | --- |
@@ -20,7 +21,7 @@ git clone https://github.com/qiao-xin/Scripts_for_GB.git
 ```
 
 ## Running
-The Example datais *Arabidopsis thaliana* transcriptome data reported in a previous study [Evolutionary Fates and Dynamic Functionalization of Young Duplicate Genes in Arabidopsis Genomes](http://www.plantphysiol.org/content/172/1/427.abstract). 
+The example transcriptome data (```example_data```) from different tissues of  *Arabidopsis thaliana*  was reported in a previous study [Evolutionary Fates and Dynamic Functionalization of Young Duplicate Genes in Arabidopsis Genomes](http://www.plantphysiol.org/content/172/1/427.abstract). 
 
 |||
 | --- | --- |
@@ -34,7 +35,8 @@ The Example datais *Arabidopsis thaliana* transcriptome data reported in a previ
 Before running this pipline, some files should be prepared:
 
 - [Ath.tandem.pairs](https://github.com/qiao-xin/Scripts_for_GB/blob/master/compute_pearson_r/Ath.tandem.pairs): Duplicate gene pairs in *Arabidopsis thaliana* 
-- [Kallisto results](https://github.com/qiao-xin/Scripts_for_GB/tree/master/compute_pearson_r/example_data): Kallisto output files(see [Example Data](https://github.com/qiao-xin/Scripts_for_GB/tree/master/compute_pearson_r/example_data))
+- [Kallisto results](https://github.com/qiao-xin/Scripts_for_GB/tree/master/compute_pearson_r/example_data): [Kallisto](http://pachterlab.github.io/kallisto/about.html) output files(see [Example Data](https://github.com/qiao-xin/Scripts_for_GB/tree/master/compute_pearson_r/example_data))
+
 
 ### 2.Running
 When you prepared Input files, this pipeline can provide a easy way to calculate PCC of gene pairs.
