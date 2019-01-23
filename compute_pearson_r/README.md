@@ -1,6 +1,6 @@
 # A pipeline used to compute Pearson's correlation coefficient  
 
-This pipeline can be used to compute Pearson's coorelation coefficient (*r*) between expression profiles of gene pairs derived from different modes of gene duplication. Meanwhile, this pipeline can automatically generate 10,000 random gene pairs and compute *r* values for them.
+This pipeline can be used to compute Pearson's coorelation coefficient (*r*) between expression profiles of duplicate gene pairs derived from different modes of gene duplication. Meanwhile, this pipeline can automatically generate 10,000 random gene pairs and compute *r* values for them.
 
 | | |
 | --- | --- |
@@ -49,7 +49,7 @@ The result files were provided in ```example_data```:
 
 The duplicate gene pairs identified from different plants are available on [PlantDGD]().
 
-Here, we only estimated ***r*** values between expression profiles of tandem gene pairs in *A. thaliana*. Also, you can include other types of duplicate gene pairs (e.g. WGD, PD, TRD) in the current directory.
+Here, we only estimated ***r*** values between expression profiles of tandem gene pairs in *A. thaliana*. Also, you can include other types of duplicate gene pairs (e.g. WGD, PD, TRD) in current directory.
 
 
 ## Running
@@ -64,16 +64,25 @@ perl compute_pearsonr_pipeline.pl
 ## Results Files
 
 
-### 1 - Alltpm
-our pipeline can merge multiple expression data sets from Kallisto into one file
+### 1 - alltpm
+The integrated spatial expression for each gene in different tissues. The data in ```alltpm``` looks like this (tab separated):
 
-2.alltpm.log10: Log10 transformation for Alltpm values
+```
 
-3.Ath.tandem.pairs.pr：PCC values of gene pairs
+```
+This pipeline can extract expression values (measured as TPM) from different tissues ([Kallisto outputs](https://github.com/qiao-xin/Scripts_for_GB/tree/master/compute_pearson_r/example_data)) for each gene, and then merge into one file.
 
-4.random.pairs:1000 gene pairs randomly generated from *A.thaliana* genome
+### 2 - alltpm.log10
+Log10-transformed TPM values for each gene.
 
-5.random.pairs.pr: PCC values of 1000 randomly generate gene pairs
+### 3 - Ath.tandem.pairs.pr
+Pearson's ***r*** values for tandem gene pairs.
+
+### 4 - random.pairs
+10,000 random gene pairs were generated for *A.thaliana* when running this pipeline.
+
+### 5 - random.pairs.pr
+Pearson's ***r*** values for 10,000 random gene pairs.
 
 ## Citation
 *Qiao X, Li Q, Yin H, Qi K, Li L, Wang R, Zhang S\* and Paterson AH\*: Gene duplication and evolution in recurring polyploidization-diploidization cycles in plants. Under Review.*
