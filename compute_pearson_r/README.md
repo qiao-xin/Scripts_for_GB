@@ -1,6 +1,6 @@
 # A pipeline used to compute Pearson's correlation coefficient  
 
-This pipeline can be used to compute Pearson's coorelation coefficient (r) between expression profiles of gene pairs derived from different modes of gene duplication. Meanwhile, this pipeline can automatically generate 10,000 random gene pairs and compute r values for them.
+This pipeline can be used to compute Pearson's coorelation coefficient (*r*) between expression profiles of gene pairs derived from different modes of gene duplication. Meanwhile, this pipeline can automatically generate 10,000 random gene pairs and compute *r* values for them.
 
 | | |
 | --- | --- |
