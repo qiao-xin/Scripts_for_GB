@@ -81,4 +81,4 @@ Ath.AT1G17590.1_Ath.AT1G72830.2_Aly.Aly471968_Aly.Aly339498	0.2331	0.5479	0.1989
 - 'S' shows that the two Aly paralogs have been affected by gene covnersion.
 
 ## Citation
-*Qiao X, Li Q, Yin H, Qi K, Li L, Wang R, Zhang S\* and Paterson AH\*: Gene duplication and evolution in recurring polyploidization-diploidization cycles in plants. Under Review.*
+*[Qiao X, Li Q, Yin H, Qi K, Li L, Wang R, Zhang S, Paterson AH: Gene duplication and evolution in recurring polyploidization–diploidization cycles in plants. Genome Biology 2019, 20:38.](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1650-2)*
