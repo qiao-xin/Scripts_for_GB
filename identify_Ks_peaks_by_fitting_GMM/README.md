@@ -103,4 +103,4 @@ This command will produce:
 Ks peaks corresponding to WGD events of different ages were inferred by fitting Gaussian mixture models to Ks distribution. 
 
 ## Citation
-*Qiao X, Li Q, Yin H, Qi K, Li L, Wang R, Zhang S\* and Paterson AH\*: Gene duplication and evolution in recurring polyploidization-diploidization cycles in plants. Under Review.*
+*[Qiao X, Li Q, Yin H, Qi K, Li L, Wang R, Zhang S, Paterson AH: Gene duplication and evolution in recurring polyploidization–diploidization cycles in plants. Genome Biology 2019, 20:38.](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1650-2)*
