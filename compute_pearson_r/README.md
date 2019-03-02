@@ -47,7 +47,7 @@ The result files were provided in ```example_data```:
 
 ### 2. duplicate gene pairs
 
-The duplicate gene pairs identified from different plants are available on [PlantDGD]().
+The duplicate gene pairs identified from different plants are available on [PlantDGD](http://pdgd.njau.edu.cn:8080).
 
 Here, we only estimated ***r*** values between expression profiles of tandem gene pairs in *A. thaliana*. Also, you can include other types of duplicate gene pairs (e.g. WGD, PD, TRD) in current directory.
 
