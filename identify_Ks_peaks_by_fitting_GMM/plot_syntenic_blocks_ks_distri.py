@@ -4,6 +4,8 @@
 # Author: Xin Qiao
 # Date: 01/02/2018
 # Date: 10/12/2018
+# Date: May 16 2019
+
 import sys
 from sys import argv
 
@@ -27,10 +29,6 @@ from scipy.stats import norm
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-
-
-
-
 
 def gaussian(fi,component):
     data = pd.read_table(fi)
