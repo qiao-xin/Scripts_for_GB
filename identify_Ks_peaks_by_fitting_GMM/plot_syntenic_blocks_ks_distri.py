@@ -4,22 +4,8 @@
 # Author: Xin Qiao
 # Date: 01/02/2018
 # Date: 10/12/2018
-
-import os
 import sys
 from sys import argv
-import re
-
-import pandas as pd
-
-import numpy as np
-from numpy import log
-from sklearn.mixture import GMM, GaussianMixture
-from scipy.stats import norm
-
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
 
 try:
     argv[1]
@@ -28,6 +14,23 @@ try:
 except:
     print "Usage: python %s <Species_Abbr.synteny.blocks.ks.info> <components> <Species_Abbr>" % argv[0]
     sys.exit()
+
+import os
+import re
+import pandas as pd
+import numpy as np
+from numpy import log
+#from sklearn.mixture import GMM, GaussianMixture
+from sklearn.mixture import GaussianMixture
+from scipy.stats import norm
+
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+
+
+
+
 
 def gaussian(fi,component):
     data = pd.read_table(fi)
