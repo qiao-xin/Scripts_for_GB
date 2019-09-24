@@ -5,6 +5,7 @@
 # Date: 01/02/2018
 # Date: 10/12/2018
 # Date: May 16 2019
+# Date: Sep 24 2019
 
 import sys
 from sys import argv
@@ -53,7 +54,8 @@ def hist_plot(sort_data):
     ax.hist(histd, bins = nb, normed = True, color = '#f1f1f1', edgecolor = '#B8BFC6', label = "Ks distribution")#Empirical
 
 def gaussian_fit(aks,gauss_mixt,gmm):
-    color=['#7bb3ff','#fb6a6a','#96cd69','#ffcc5c']
+    color=['#7bb3ff','#fb6a6a','#96cd69','#ffcc5c','#e86af0','#b3e0d9','#dabe98','#c9cfef','#fda198','#98cbf0',
+    '#fdc68e','#cae491','#fee0f2','#e2e2e4','#cea3ca','#d6f0d7','#fbf09a','#bbdeed','#c3e8a8']
     for i in range(len(gauss_mixt)):
         ax.plot(aks, gauss_mixt[i], color=color[i], label = 'Component ' + str(i+1))
     ax.axes.spines['right'].set_color('none')
