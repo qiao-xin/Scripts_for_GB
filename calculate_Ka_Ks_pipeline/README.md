@@ -25,20 +25,20 @@ git clone https://github.com/qiao-xin/Scripts_for_GB.git
 ## Running
 Once the required dependencies have been installed, try running this pipeline on the example data:
 ```bash
-perl computing_Ka_Ks_pipe.pl -d data/Ath.cds -g data/Ath.tandem.pairs -o Ath.tandem.pairs.axt
+perl computing_Ka_Ks_pipe.pl -d data/Ath.cds -g data/Ath.proximal.pairs -o Ath.proximal.pairs.kaks
 ```
 **Note:** The CDS sequences (FASTA format) can be downloaded from [Phytozome](https://phytozome.jgi.doe.gov/pz/portal.html), [NCBI](https://www.ncbi.nlm.nih.gov), [Ensembl Plants](http://plants.ensembl.org/index.html), etc. The different modes of duplicated gene pairs for any interested species can be identified using [DupGen_finder](https://github.com/qiao-xin/DupGen_finder), and are also available on [PlantDGD](http://pdgd.njau.edu.cn:8080).
 
 ## Results Files
-### 1 - Ath.tandem.pairs.axt
+### 1 - Ath.proximal.pairs.kaks.axt
 The aligned pairwise sequences with AXT format was used as input file for KaKs_Calculator.
 
-### 2 - Ath.tandem.pairs.axt.kaks
+### 2 - Ath.proximal.pairs.kaks.KKC.format
 KaKs_Calculator generates this file that contains Ka, Ks, Ka/Ks values and other informations.
 
 **Note:** KaKs_Calculator provides comprehensive information estimated from compared sequences, including numbers of synonymous and nonsynonymous sites, numbers of synonymous and nonsynonymous substitutions, GC contents, maximum-likelihood score, and AICC, in addition to synonymous and nonsynonymous substitution rates and their ratio. Meanwhile, Fisher’s exact test for small sample is applied to justify the validity of Ka and Ks calculated by these methods.
 
-### 3 - Ath.tandem.pairs.axt.kaks.simplified
+### 3 - Ath.proximal.pairs.kaks
 This is a simplified version of KaKs_Calculator output file, which only contains Ka, Ks, Ka/Ks and P-value.
 ```
 Duplicate 1	Duplicate 2	Ka	Ks	Ka/Ks	P-Value
@@ -48,7 +48,7 @@ AT1G01670.1	AT1G01680.1	0.365625	1.26443	0.289163	7.50956e-11
 AT1G02190.1	AT1G02205.3	0.310436	3.41288	0.0909601	1.52263e-75
 ```
 
-### 4 - Ath.tandem.pairs.axt.KaKs_Calculator.log
+### 4 - Ath.proximal.pairs.kaks.KKC.logfile
 KaKs_Calculator generates this log file:
 ```
 Method(s): GMYN 
