@@ -28,6 +28,7 @@ Once the required dependencies have been installed, try running this pipeline on
 perl calculate_Ka_Ks_pipe.pl -d data/Ath.cds -g data/Ath.tandem.pairs -o data/Ath.tandem.pairs.kaks
 ```
 **Note:** It will take a few minutes to carry out above computation task, so please be patient. 
+
 The CDS sequences (FASTA format) can be downloaded from [Phytozome](https://phytozome.jgi.doe.gov/pz/portal.html), [NCBI](https://www.ncbi.nlm.nih.gov), [Ensembl Plants](http://plants.ensembl.org/index.html), etc. The different modes of duplicated gene pairs for any interested species can be identified using [DupGen_finder](https://github.com/qiao-xin/DupGen_finder), and are also available on [PlantDGD](http://pdgd.njau.edu.cn:8080).
 
 ## Results Files
