@@ -10,7 +10,7 @@ This pipeline can be used to compute Pearson's coorelation coefficient (*r*) bet
 
 ## Dependencies
 - [Perl](https://www.perl.org/)
-- [Python](https://www.python.org/)
+- [Python 2.7](https://www.python.org/)
   - [Pandas](http://pandas.pydata.org/)
   - [Scipy](https://www.scipy.org/)
  
