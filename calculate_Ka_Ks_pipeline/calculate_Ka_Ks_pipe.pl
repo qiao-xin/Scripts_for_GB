@@ -68,7 +68,9 @@ for(my $count = 0; $count < @contents; $count++){
 }
 
 #my ($sp) = ($gene_file =~ /^(\S+?)\./);
-system "cat $out_dir/*.axt > $out_file.axt";#modified Sep 25 2019
+#system "cat $out_dir/*.axt > $out_file.axt";#modified Sep 25 2019
+system "find $out_dir/ -name \"*.axt\" | xargs cat > $out_file.axt.raw";#modified Sep 25 2019, added at 26 Oct 2020
+system "mv $out_file.axt.raw $out_file.axt";#modified Sep 25 2019, added at 26 Oct 2020
 
 warn "CAUTION: deleting temporary files in $out_dir failed!\n" unless unlink glob "$out_dir/*";
 warn "CAUTION: removing temporary directory $out_dir failed!\n" unless rmdir $out_dir;
