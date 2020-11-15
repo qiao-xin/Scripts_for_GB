@@ -12,9 +12,9 @@ This pipline aimed to estimate the Ks peaks corresponding to WGD events of diffe
 - [Perl](https://www.perl.org)
 - [BioPerl](https://bioperl.org)
 - [Python 2.7](https://www.python.org/)
-  - [Pandas](http://pandas.pydata.org/)
-  - [Scipy](https://www.scipy.org/)
-  - [Sklearn](https://scikit-learn.org/stable/index.html)
+  - [pandas](http://pandas.pydata.org/)
+  - [scipy](https://www.scipy.org/)
+  - [scikit-learn](https://scikit-learn.org/stable/index.html)
 
 ## Installation
 
