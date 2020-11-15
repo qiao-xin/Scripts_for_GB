@@ -6,20 +6,13 @@
 # Date: 10/12/2018
 # Date: May 16 2019
 # Date: Sep 24 2019
-
-import sys
-from sys import argv
-
-try:
-    argv[1]
-    argv[2]
-    argv[3]
-except:
-    print "Usage: python %s <Species_Abbr.synteny.blocks.ks.info> <components> <Species_Abbr>" % argv[0]
-    sys.exit()
+# 15 Nov 2020
 
 import os
+import sys
+from sys import argv
 import re
+
 import pandas as pd
 import numpy as np
 from numpy import log
@@ -31,8 +24,17 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
+try:
+    argv[1]
+    argv[2]
+    argv[3]
+except:
+    print "Usage: python %s <Species_Abbr.synteny.blocks.ks.info> <components> <Species_Abbr>" % argv[0]
+    sys.exit()
+
 def gaussian(fi,component):
-    data = pd.read_table(fi)
+    #data = pd.read_table(fi)
+    data = pd.read_csv(fi, sep='\t')# 15 Nov 2020
     sort_data = data.sort_values(['Average Ks'], ascending=True)
     aks = sort_data['Average Ks']
     aks = np.array(aks)
@@ -51,7 +53,8 @@ def hist_plot(sort_data):
     l = len(histd)
     nb = int(10*log(l))
     grey  = [0.9, 0.9, 0.9]
-    ax.hist(histd, bins = nb, normed = True, color = '#f1f1f1', edgecolor = '#B8BFC6', label = "Ks distribution")#Empirical
+    #ax.hist(histd, bins = nb, normed = True, color = '#f1f1f1', edgecolor = '#B8BFC6', label = "Ks distribution")#Empirical
+    ax.hist(histd, bins = nb, density = True, color = '#f1f1f1', edgecolor = '#B8BFC6', label = "Ks distribution")#Empirical, 15 Nov 2020
 
 def gaussian_fit(aks,gauss_mixt,gmm):
     color=['#7bb3ff','#fb6a6a','#96cd69','#ffcc5c','#e86af0','#b3e0d9','#dabe98','#c9cfef','#fda198','#98cbf0',
