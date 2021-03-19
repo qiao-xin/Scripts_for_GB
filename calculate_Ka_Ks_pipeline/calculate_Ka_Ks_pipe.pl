@@ -3,6 +3,7 @@
 # Leiting Li, Oct 15, 2014
 # Xin Qiao, Oct 05, 2018
 # Xin Qiao, Sep 25, 2019
+# Xin Qiao, Oct 26, 2020
 
 use warnings;
 use strict;
@@ -69,8 +70,8 @@ for(my $count = 0; $count < @contents; $count++){
 
 #my ($sp) = ($gene_file =~ /^(\S+?)\./);
 #system "cat $out_dir/*.axt > $out_file.axt";#modified Sep 25 2019
-system "find $out_dir/ -name \"*.axt\" | xargs cat > $out_file.axt.raw";#modified Sep 25 2019, added at 26 Oct 2020
-system "mv $out_file.axt.raw $out_file.axt";#modified Sep 25 2019, added at 26 Oct 2020
+system "find $out_dir/ -name \"*.axt\" | xargs cat > $out_file.axt.raw";#modified Sep 25 2019, added at Oct 26, 2020
+system "mv $out_file.axt.raw $out_file.axt";#modified Sep 25 2019, added at Oct 26, 2020
 
 warn "CAUTION: deleting temporary files in $out_dir failed!\n" unless unlink glob "$out_dir/*";
 warn "CAUTION: removing temporary directory $out_dir failed!\n" unless rmdir $out_dir;
@@ -94,8 +95,6 @@ while(<IN>)
 close OUT;
 close IN;
 
-system "sed -i '1i\\Gene pairs\tMethod\tKa\tKs\tKa/Ks\tP-Value (Fisher)\tLength\tS-Sites\tN-Sites\tFold-Sites (0:2:4)\tSubstitutions\t \\
-S-Substitutions\tN-Substitutions\tFold-S-Substitutions (0:2:4)\tFold-N-Substitutions (0:2:4)\tDivergence-Time\tSubstitution-Rate-Ratio (rTC:rAG:rTA:rCG:rTG:rCA/rCA)\t \\
-GC(1:2:3)\tML-Score\tAICc\tAkaike-Weight\tModel\n' $out_file.KKC.format";
+system "sed -i '1i\\Gene pairs\tMethod\tKa\tKs\tKa/Ks\tP-Value (Fisher)\tLength\tS-Sites\tN-Sites\tFold-Sites (0:2:4)\tSubstitutions\tS-Substitutions\tN-Substitutions\tFold-S-Substitutions (0:2:4)\tFold-N-Substitutions (0:2:4)\tDivergence-Time\tSubstitution-Rate-Ratio (rTC:rAG:rTA:rCG:rTG:rCA/rCA)\tGC(1:2:3)\tML-Score\tAICc\tAkaike-Weight\tModel\n' $out_file.KKC.format";
 
 __END__
